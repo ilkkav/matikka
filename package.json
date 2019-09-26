@@ -2,7 +2,7 @@
   "name": "matikka",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ilkkav/matikka",
+  "homepage": "https://ilkkav.github.io/matikka/",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "react-scripts": "3.1.1",
