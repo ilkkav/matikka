@@ -5,7 +5,7 @@ import './styles.css';
 import { task } from './task';
 import { TaskPage } from './TaskPage';
 import pirateShip from './pirate_ship.jpg';
-import belle from '/belle.png';
+import belle from './belle.png';
 import carriage from './carriage.png';
 
 const getImage = (count: number) => count % 2 === 0 ? carriage : belle;
