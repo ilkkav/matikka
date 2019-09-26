@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ilkkav/matikka/static/css/main.9cdf52ae.chunk.css",
-    "main.js": "/ilkkav/matikka/static/js/main.281a7edb.chunk.js",
-    "main.js.map": "/ilkkav/matikka/static/js/main.281a7edb.chunk.js.map",
-    "runtime~main.js": "/ilkkav/matikka/static/js/runtime~main.19d85368.js",
-    "runtime~main.js.map": "/ilkkav/matikka/static/js/runtime~main.19d85368.js.map",
-    "static/js/2.f500ba0e.chunk.js": "/ilkkav/matikka/static/js/2.f500ba0e.chunk.js",
-    "static/js/2.f500ba0e.chunk.js.map": "/ilkkav/matikka/static/js/2.f500ba0e.chunk.js.map",
-    "index.html": "/ilkkav/matikka/index.html",
-    "precache-manifest.98c953006f06512d5a48baa1a4d55ae1.js": "/ilkkav/matikka/precache-manifest.98c953006f06512d5a48baa1a4d55ae1.js",
-    "service-worker.js": "/ilkkav/matikka/service-worker.js",
-    "static/css/main.9cdf52ae.chunk.css.map": "/ilkkav/matikka/static/css/main.9cdf52ae.chunk.css.map",
-    "static/media/belle.png": "/ilkkav/matikka/static/media/belle.c016e467.png",
-    "static/media/carriage.png": "/ilkkav/matikka/static/media/carriage.c7e8586c.png"
+    "main.css": "/matikka/static/css/main.9cdf52ae.chunk.css",
+    "main.js": "/matikka/static/js/main.16b632ba.chunk.js",
+    "main.js.map": "/matikka/static/js/main.16b632ba.chunk.js.map",
+    "runtime~main.js": "/matikka/static/js/runtime~main.445039c4.js",
+    "runtime~main.js.map": "/matikka/static/js/runtime~main.445039c4.js.map",
+    "static/js/2.f500ba0e.chunk.js": "/matikka/static/js/2.f500ba0e.chunk.js",
+    "static/js/2.f500ba0e.chunk.js.map": "/matikka/static/js/2.f500ba0e.chunk.js.map",
+    "index.html": "/matikka/index.html",
+    "precache-manifest.fd5c4c45882d1eaf641e1c15c36f846d.js": "/matikka/precache-manifest.fd5c4c45882d1eaf641e1c15c36f846d.js",
+    "service-worker.js": "/matikka/service-worker.js",
+    "static/css/main.9cdf52ae.chunk.css.map": "/matikka/static/css/main.9cdf52ae.chunk.css.map",
+    "static/media/belle.png": "/matikka/static/media/belle.c016e467.png",
+    "static/media/carriage.png": "/matikka/static/media/carriage.c7e8586c.png"
   }
 }
