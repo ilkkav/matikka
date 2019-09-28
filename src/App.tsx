@@ -22,9 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="flex-container-3">
-        <div className="flex-container row color-2">LYYTIN LASKUPELI</div>
-
+        <div className="header flex-item color-2">LYYTIN LASKUPELI</div>
         {currentTaskDone ?
           <img className="flex-item color-2 responsive-image" src={getImage(doneCount)} onClick={() => {
             setCurrentTaskDone(false);
@@ -34,7 +32,6 @@ function App() {
           <TaskPage input={task()} setDone={handleTaskDone} />
         }
         <p>{doneCount}</p>
-      </div>
     </div>
   );
 }
