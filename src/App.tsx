@@ -26,12 +26,10 @@ function App() {
         <div className="flex-container row color-2">LYYTIN LASKUPELI</div>
 
         {currentTaskDone ?
-          <div className="flex-row column">
-            <img className="flex-item color-2 responsive-image" src={getImage(doneCount)} onClick={() => {
-              setCurrentTaskDone(false);
-            }
-            }></img>
-          </div>
+          <img className="flex-item color-2 responsive-image" src={getImage(doneCount)} onClick={() => {
+            setCurrentTaskDone(false);
+          }
+          }></img>
           :
           <TaskPage input={task()} setDone={handleTaskDone} />
         }
