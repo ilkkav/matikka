@@ -24,18 +24,19 @@ function App() {
     <div className="App">
       <div className="flex-container-3">
         <div className="flex-row color-2">LYYTIN LASKUPELI</div>
+
+        {currentTaskDone ?
+          <div className="flex-row column">
+            <img className="flex-item color-2 responsive-image" src={getImage(doneCount)} onClick={() => {
+              setCurrentTaskDone(false);
+            }
+            }></img>
+          </div>
+          :
+          <TaskPage input={task()} setDone={handleTaskDone} />
+        }
+        <p>{doneCount}</p>
       </div>
-      {currentTaskDone ?
-        <div className="flex-row column">
-          <img className="flex-item color-2 responsive-image" src={getImage(doneCount)} onClick={() => {
-            setCurrentTaskDone(false);
-          }
-          }></img>
-        </div>
-        :
-        <TaskPage input={task()} setDone={handleTaskDone} />
-      }
-      <p>{doneCount}</p>
     </div>
   );
 }
