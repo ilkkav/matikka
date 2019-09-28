@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/matikka/static/css/main.57b5ede0.chunk.css",
-    "main.js": "/matikka/static/js/main.6451fe9e.chunk.js",
-    "main.js.map": "/matikka/static/js/main.6451fe9e.chunk.js.map",
+    "main.css": "/matikka/static/css/main.a33ccc4c.chunk.css",
+    "main.js": "/matikka/static/js/main.053d8db7.chunk.js",
+    "main.js.map": "/matikka/static/js/main.053d8db7.chunk.js.map",
     "runtime~main.js": "/matikka/static/js/runtime~main.445039c4.js",
     "runtime~main.js.map": "/matikka/static/js/runtime~main.445039c4.js.map",
     "static/js/2.f500ba0e.chunk.js": "/matikka/static/js/2.f500ba0e.chunk.js",
     "static/js/2.f500ba0e.chunk.js.map": "/matikka/static/js/2.f500ba0e.chunk.js.map",
     "index.html": "/matikka/index.html",
-    "precache-manifest.2b00adc22188b1f65dd1e9ceeeb7b5b8.js": "/matikka/precache-manifest.2b00adc22188b1f65dd1e9ceeeb7b5b8.js",
+    "precache-manifest.f77aace76a2b2149f257b1092a0dec9b.js": "/matikka/precache-manifest.f77aace76a2b2149f257b1092a0dec9b.js",
     "service-worker.js": "/matikka/service-worker.js",
-    "static/css/main.57b5ede0.chunk.css.map": "/matikka/static/css/main.57b5ede0.chunk.css.map",
+    "static/css/main.a33ccc4c.chunk.css.map": "/matikka/static/css/main.a33ccc4c.chunk.css.map",
     "static/media/belle.png": "/matikka/static/media/belle.c016e467.png",
     "static/media/carriage.png": "/matikka/static/media/carriage.c7e8586c.png"
   }

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43b8001e685e1c6673909f5818cb1faf",
+    "revision": "d37f79d333bc44273c9068f581b4fa46",
     "url": "/matikka/index.html"
   },
   {
-    "revision": "0d9e3d1fa5f1a8972e32",
-    "url": "/matikka/static/css/main.57b5ede0.chunk.css"
+    "revision": "f27e7b1bb14d80ee514d",
+    "url": "/matikka/static/css/main.a33ccc4c.chunk.css"
   },
   {
     "revision": "62f9195c233674ac8fac",
     "url": "/matikka/static/js/2.f500ba0e.chunk.js"
   },
   {
-    "revision": "0d9e3d1fa5f1a8972e32",
-    "url": "/matikka/static/js/main.6451fe9e.chunk.js"
+    "revision": "f27e7b1bb14d80ee514d",
+    "url": "/matikka/static/js/main.053d8db7.chunk.js"
   },
   {
     "revision": "0cfab1d036f3f3ae08ff",
