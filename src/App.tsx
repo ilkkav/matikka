@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="flex-container-3">
-        <div className="flex-row color-2">LYYTIN LASKUPELI</div>
+        <div className="flex-container row color-2">LYYTIN LASKUPELI</div>
 
         {currentTaskDone ?
           <div className="flex-row column">
