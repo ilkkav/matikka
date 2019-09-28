@@ -27,7 +27,7 @@ function App() {
       </div>
       {currentTaskDone ?
         <div className="flex-row column">
-          <img className="flex-item color-2" style={{ height: 500, padding: 0, justifySelf: 'center', pointerEvents: "all" }} src={getImage(doneCount)} onClick={() => {
+          <img className="flex-item color-2 responsive-image" src={getImage(doneCount)} onClick={() => {
             setCurrentTaskDone(false);
           }
           }></img>
