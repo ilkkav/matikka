@@ -13,7 +13,7 @@ export function TaskPage({ input: { first, second, result}, setDone }: { input: 
         <div className="flex-item">+</div>
         <div className="flex-item">{second}</div>
         <div className="flex-item">=</div>
-        <input className="flex-item color-0" type="text" onChange={
+        <input className="flex-item color-0" type="tel" onChange={
           (event) => {
             if (isCorrect(event.target.value)) {
               setDone(true);
