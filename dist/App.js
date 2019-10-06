@@ -21,7 +21,7 @@ function App() {
                 React.createElement("img", { className: "flex-item color-2", style: { height: 500, padding: 0, justifySelf: 'center', pointerEvents: "all" }, src: getImage(doneCount), onClick: function () {
                         setCurrentTaskDone(false);
                     } }))
-            :
+            :   
                 React.createElement(TaskPage, { input: task(), setDone: handleTaskDone }),
         React.createElement("p", null, doneCount)));
 }
