@@ -6,9 +6,15 @@ export type Task = {
 }
 
 export type WordTask = {
-  word: string
-  wordWithBlanks: string
-  blanks: string
+  letters: Letter[]
+  blanks: string[]
+}
+
+type LetterStatus = 'Normal' | 'Hidden' | 'Solved'
+
+export type Letter = {
+  c: string
+  status: LetterStatus
 }
 
 export const task = (): Task=> {
@@ -37,7 +43,10 @@ export const wordTask = (): WordTask => {
     }
   }
   const blankIndices = [firstRandom, secondRandom].sort((a: number, b: number) => a-b)
-
+  const letters: Letter[] = [...word].map(c => ({c, status: 'Normal'}))
+  blankIndices.forEach(i => {letters[i].status = 'Hidden'})
+  return {letters, blanks: blankIndices.map(i => letters[i].c)}
+/*
   const withBlanks = [...word];
   var blanks = '';
   for (let i = 0; i < blankIndices.length; i++) { 
@@ -47,4 +56,5 @@ export const wordTask = (): WordTask => {
   }
   console.log('blanks', blanks)
   return {word, wordWithBlanks: withBlanks.join(''), blanks}
+  */
 }

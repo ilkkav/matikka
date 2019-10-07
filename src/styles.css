@@ -123,6 +123,7 @@ input {
 
 .correct-text {
   color: #2ECC71;
+  border: 3px solid #2ECC71;
 }
 
 .asphalt {
