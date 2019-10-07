@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/matikka/static/css/main.49ef1345.chunk.css",
-    "main.js": "/matikka/static/js/main.ec364b85.chunk.js",
-    "main.js.map": "/matikka/static/js/main.ec364b85.chunk.js.map",
+    "main.js": "/matikka/static/js/main.49c7ee61.chunk.js",
+    "main.js.map": "/matikka/static/js/main.49c7ee61.chunk.js.map",
     "runtime~main.js": "/matikka/static/js/runtime~main.445039c4.js",
     "runtime~main.js.map": "/matikka/static/js/runtime~main.445039c4.js.map",
     "static/js/2.f9717873.chunk.js": "/matikka/static/js/2.f9717873.chunk.js",
     "static/js/2.f9717873.chunk.js.map": "/matikka/static/js/2.f9717873.chunk.js.map",
     "index.html": "/matikka/index.html",
-    "precache-manifest.d3618213d677d75662915cbb7fd20e72.js": "/matikka/precache-manifest.d3618213d677d75662915cbb7fd20e72.js",
+    "precache-manifest.3c11c4cfb018a81488e7fd5f6ba51993.js": "/matikka/precache-manifest.3c11c4cfb018a81488e7fd5f6ba51993.js",
     "service-worker.js": "/matikka/service-worker.js",
     "static/css/main.49ef1345.chunk.css.map": "/matikka/static/css/main.49ef1345.chunk.css.map",
     "static/media/butterfly.jpg": "/matikka/static/media/butterfly.cad1efa9.jpg",

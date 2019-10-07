@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3436bf06c5aa7b6c0046109b0d9c8279",
+    "revision": "694630207b4d64b2ce81bd636357d2da",
     "url": "/matikka/index.html"
   },
   {
-    "revision": "63024c4e5464f2a79758",
+    "revision": "cfc950951e4203362b4b",
     "url": "/matikka/static/css/main.49ef1345.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/matikka/static/js/2.f9717873.chunk.js"
   },
   {
-    "revision": "63024c4e5464f2a79758",
-    "url": "/matikka/static/js/main.ec364b85.chunk.js"
+    "revision": "cfc950951e4203362b4b",
+    "url": "/matikka/static/js/main.49c7ee61.chunk.js"
   },
   {
     "revision": "0cfab1d036f3f3ae08ff",
