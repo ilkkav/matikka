@@ -21,6 +21,7 @@ function App() {
 
   const [currentTaskDone, setCurrentTaskDone] = useState(false);
   const [doneCount, setDoneCount] = useState(0);
+  const [wordGameSelected, setWordGameSelected] = useState<boolean>(true);
 
   return (
     <div className="App">
@@ -31,18 +32,17 @@ function App() {
         }
         }></img>
         :
-        <WordTaskPage input={wordTask()} setDone={handleTaskDone} />
-        
+        wordGameSelected ? <WordTaskPage input={wordTask()} setDone={handleTaskDone} />
+          : <TaskPage input={task()} setDone={handleTaskDone} />
       }
-      {false && <TaskPage input={task()} setDone={handleTaskDone} />}
-      {false && <div className="flex-container narrow">
+      <div className="flex-container narrow">
         <button className="flex-item button" value="valmis" onClick={() => {
-
+          setWordGameSelected(!wordGameSelected)
+          setCurrentTaskDone(false)
         }} >
           Vaihda peli
         </button>
       </div>
-      }
     </div>
   );
 }
