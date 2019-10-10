@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/matikka/static/css/main.49ef1345.chunk.css",
-    "main.js": "/matikka/static/js/main.49c7ee61.chunk.js",
-    "main.js.map": "/matikka/static/js/main.49c7ee61.chunk.js.map",
+    "main.css": "/matikka/static/css/main.e8a2f82c.chunk.css",
+    "main.js": "/matikka/static/js/main.65ba134d.chunk.js",
+    "main.js.map": "/matikka/static/js/main.65ba134d.chunk.js.map",
     "runtime~main.js": "/matikka/static/js/runtime~main.445039c4.js",
     "runtime~main.js.map": "/matikka/static/js/runtime~main.445039c4.js.map",
-    "static/js/2.f9717873.chunk.js": "/matikka/static/js/2.f9717873.chunk.js",
-    "static/js/2.f9717873.chunk.js.map": "/matikka/static/js/2.f9717873.chunk.js.map",
+    "static/js/2.2771e3ae.chunk.js": "/matikka/static/js/2.2771e3ae.chunk.js",
+    "static/js/2.2771e3ae.chunk.js.map": "/matikka/static/js/2.2771e3ae.chunk.js.map",
     "index.html": "/matikka/index.html",
-    "precache-manifest.3c11c4cfb018a81488e7fd5f6ba51993.js": "/matikka/precache-manifest.3c11c4cfb018a81488e7fd5f6ba51993.js",
+    "precache-manifest.71fb6a441c358bc752d5e7f2ddd8edad.js": "/matikka/precache-manifest.71fb6a441c358bc752d5e7f2ddd8edad.js",
     "service-worker.js": "/matikka/service-worker.js",
-    "static/css/main.49ef1345.chunk.css.map": "/matikka/static/css/main.49ef1345.chunk.css.map",
+    "static/css/main.e8a2f82c.chunk.css.map": "/matikka/static/css/main.e8a2f82c.chunk.css.map",
     "static/media/butterfly.jpg": "/matikka/static/media/butterfly.cad1efa9.jpg",
-    "static/media/princesses.jpg": "/matikka/static/media/princesses.eb8b0801.jpg"
+    "static/media/castle.jpg": "/matikka/static/media/castle.d188f359.jpg",
+    "static/media/fire_engine.jpg": "/matikka/static/media/fire_engine.850934ae.jpg",
+    "static/media/penguin.jpg": "/matikka/static/media/penguin.40fd825f.jpg",
+    "static/media/princesses.jpg": "/matikka/static/media/princesses.eb8b0801.jpg",
+    "static/media/rainbow.jpg": "/matikka/static/media/rainbow.70091d51.jpg",
+    "static/media/unicorn.jpg": "/matikka/static/media/unicorn.e2371059.jpg"
   }
 }
