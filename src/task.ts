@@ -64,7 +64,7 @@ const wordTask = (word: string): WordTask => {
   const letters: Letter[] = [...word].map(c => ({c, status: 'Normal'}))
   blankIndices.forEach(i => {letters[i].status = 'Hidden'})
   const blanks = blankIndices.map(i => letters[i].c)
-  return {letters, blanks, image: wordsAndImages[word], guessLetters: randomLettersIncluding([...blanks])}
+  return {letters, blanks, image: wordsAndImages[word], guessLetters: randomLettersIncluding(blanks)}
 }
 
 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
@@ -72,9 +72,21 @@ const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'
 
 const randomLetter = () => letters[randomLessThan(letters.length)]
 
+const randomLetterExcluding = (toExclude: string[]) => {
+  let candidate = randomLetter()
+  while(toExclude.includes(candidate)) {
+    candidate = randomLetter()
+  }
+  return candidate
+}
+
 const randomLettersIncluding = (toInclude: string[]) => {
   const letterCount = 8
-  const result: string[] = [1, 2, 3, 4, 5, 6, 7, 8].map(_ => randomLetter())
+  const result: string[] = []
+  for (let i = 0; i < letterCount; i++) {
+    result.push(randomLetterExcluding(result)) //no duplicates
+  }
+  
   for (let i = 0; i < toInclude.length; i++) {
     result[randomLessThan(letterCount)] = toInclude[i]
   }
