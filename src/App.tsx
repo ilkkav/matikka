@@ -31,12 +31,12 @@ function App() {
         wordGameSelected ? <WordTaskPage input={wordTasks[doneCount]} setDone={handleTaskDone} />
           : <TaskPage input={task()} setDone={handleTaskDone} />
       }
-      <div className="flex-container narrow">
-        <button className="flex-item button" value="valmis" onClick={() => {
+      <div className="flex-container narrow clouds">
+        <button className="flex-item button small pomegranate hollow" value="valmis" onClick={() => {
           setWordGameSelected(!wordGameSelected)
           setCurrentTaskDone(false)
         }} >
-          Vaihda peli
+          VAIHDA PELI
         </button>
       </div>
     </div>

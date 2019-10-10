@@ -104,7 +104,10 @@ input {
 
 .button {
   background-color: #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
+  max-width: 300px;
+  font-size: 0.6em;
+  margin: auto;
 }
 
 .rotating {
@@ -121,6 +124,10 @@ input {
   color: #ECF0F1;
 }
 
+.clouds {
+  background-color: #ECF0F1;
+}
+
 .correct-text {
   color: #2ECC71;
   border: 3px solid #2ECC71;
@@ -135,6 +142,9 @@ input {
 
 .orange {
   background-color: #F39C12;
+}
+.pomegranate {
+  background-color: #C0392B;
 }
 
 .emerald {
