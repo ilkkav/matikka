@@ -2,21 +2,17 @@
 import React, { useState } from 'react';
 import './App.css';
 import './styles.css';
-import { task, wordTask } from './task';
+import { task, getWordTasks, WordTask } from './task';
 import { TaskPage } from './TaskPage';
-import pirateShip from './pirate_ship.jpg';
-import princesses from './princesses.jpg';
-import butterfly from './butterfly.jpg'
-import carriage from './carriage.png';
 import { WordTaskPage } from './WordTaskPage';
 
-const getImage = (count: number) => count % 2 === 0 ? butterfly : princesses;
+const wordTasks: WordTask[] = getWordTasks()
 
 function App() {
 
   const handleTaskDone = (done: boolean) => {
-    setCurrentTaskDone(done);
     setDoneCount(doneCount + 1);
+    setCurrentTaskDone(done);
   }
 
   const [currentTaskDone, setCurrentTaskDone] = useState(false);
@@ -27,12 +23,12 @@ function App() {
     <div className="App">
       <div className="header flex-item alizarin">LYYTIN LASKUPELI</div>
       {currentTaskDone ?
-        <img className="flex-item color-2 responsive-image" src={getImage(doneCount)} onClick={() => {
+        <img className="flex-item color-2 responsive-image" src={wordTasks[doneCount - 1].image} onClick={() => {
           setCurrentTaskDone(false);
         }
         }></img>
         :
-        wordGameSelected ? <WordTaskPage input={wordTask()} setDone={handleTaskDone} />
+        wordGameSelected ? <WordTaskPage input={wordTasks[doneCount]} setDone={handleTaskDone} />
           : <TaskPage input={task()} setDone={handleTaskDone} />
       }
       <div className="flex-container narrow">
