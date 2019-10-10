@@ -18,6 +18,7 @@ export type WordTask = {
   letters: Letter[]
   blanks: string[]
   image: any
+  guessLetters: string[]
 }
 
 type LetterStatus = 'Normal' | 'Hidden' | 'Solved'
@@ -62,5 +63,20 @@ const wordTask = (word: string): WordTask => {
   const blankIndices = [firstRandom, secondRandom].sort((a: number, b: number) => a-b)
   const letters: Letter[] = [...word].map(c => ({c, status: 'Normal'}))
   blankIndices.forEach(i => {letters[i].status = 'Hidden'})
-  return {letters, blanks: blankIndices.map(i => letters[i].c), image: wordsAndImages[word]}
+  const blanks = blankIndices.map(i => letters[i].c)
+  return {letters, blanks, image: wordsAndImages[word], guessLetters: randomLettersIncluding([...blanks])}
+}
+
+const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+  'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Å', 'Ä', 'Ö']
+
+const randomLetter = () => letters[randomLessThan(letters.length)]
+
+const randomLettersIncluding = (toInclude: string[]) => {
+  const letterCount = 8
+  const result: string[] = [1, 2, 3, 4, 5, 6, 7, 8].map(_ => randomLetter())
+  for (let i = 0; i < toInclude.length; i++) {
+    result[randomLessThan(letterCount)] = toInclude[i]
+  }
+  return result
 }

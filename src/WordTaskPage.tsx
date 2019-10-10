@@ -7,9 +7,6 @@ const removeFromArray = (c: string, source: string[]) => {
   return source
 }
 
-const GuessLetters = ['A', 'R', 'I', 'N', 'P', 'E', 'O', 'T']
-
-
 const withStatuses = (letters: Letter[], solved: string[]) => {
   const result = [...letters]
   console.log('result:', result)
@@ -23,7 +20,7 @@ const withStatuses = (letters: Letter[], solved: string[]) => {
   return result
 }
 
-export function WordTaskPage({ input: { letters, blanks }, setDone }: { input: WordTask, setDone: (t: boolean) => void }) {
+export function WordTaskPage({ input: { letters, blanks, guessLetters }, setDone }: { input: WordTask, setDone: (t: boolean) => void }) {
 
   const [lettersToGuess, setLettersToGuess] = useState<string[]>([...blanks])
   const [solvedLetters, setSolvedLetters] = useState<string[]>([])
@@ -47,10 +44,10 @@ export function WordTaskPage({ input: { letters, blanks }, setDone }: { input: W
         {withStatuses(letters, solvedLetters).map((l: Letter) => LetterBox(l, saveCharInput))}
       </div>
       <div className="flex-container low row">
-        {GuessLetters.slice(0, 4).map(l => GuessLetterBox(l, saveCharInput, solvedLetters.includes(l)))}
+        {guessLetters.slice(0, 4).map(l => GuessLetterBox(l, saveCharInput, solvedLetters.includes(l)))}
       </div>
       <div className="flex-container low row">
-        {GuessLetters.slice(4, 8).map(l => GuessLetterBox(l, saveCharInput, solvedLetters.includes(l)))}
+        {guessLetters.slice(4, 8).map(l => GuessLetterBox(l, saveCharInput, solvedLetters.includes(l)))}
       </div>
     </>)
 }
