@@ -31,13 +31,14 @@ const words = [
   'SATEENKAARI'
 ]
 
+const randomLessThan = (max: number) => Math.floor(Math.random()*max)
+
 export const wordTask = (): WordTask => {
-  const randomIndex = (): number => Math.floor(Math.random()*words.length)
-  const word = words[randomIndex()]
-  const firstRandom = randomIndex()
+  const word = words[randomLessThan(words.length)]
+  const firstRandom = randomLessThan(word.length)
   let secondRandom
   while (true) {
-    secondRandom = randomIndex()
+    secondRandom = randomLessThan(word.length)
     if (secondRandom !== firstRandom) {
       break;
     }
@@ -46,15 +47,4 @@ export const wordTask = (): WordTask => {
   const letters: Letter[] = [...word].map(c => ({c, status: 'Normal'}))
   blankIndices.forEach(i => {letters[i].status = 'Hidden'})
   return {letters, blanks: blankIndices.map(i => letters[i].c)}
-/*
-  const withBlanks = [...word];
-  var blanks = '';
-  for (let i = 0; i < blankIndices.length; i++) { 
-    const letterAtI = word[blankIndices[i]]
-    blanks = blanks + letterAtI
-    withBlanks[blankIndices[i]] = '_'
-  }
-  console.log('blanks', blanks)
-  return {word, wordWithBlanks: withBlanks.join(''), blanks}
-  */
 }
