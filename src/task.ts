@@ -51,16 +51,18 @@ export const task = (): Task=> {
 
 const randomLessThan = (max: number) => Math.floor(Math.random()*max)
 
-const wordTask = (word: string): WordTask => {
-  const firstRandom = randomLessThan(word.length)
-  let secondRandom
-  while (true) {
-    secondRandom = randomLessThan(word.length)
-    if (secondRandom !== firstRandom) {
-      break;
-    }
+const twoRandomLessThan = (max: number): [number, number] => {
+  const firstRandom = randomLessThan(max)
+  let secondRandom = firstRandom
+  while (firstRandom === secondRandom) {
+    secondRandom = randomLessThan(max)
   }
-  const blankIndices = [firstRandom, secondRandom].sort((a: number, b: number) => a-b)
+  return [firstRandom, secondRandom]
+}
+
+const wordTask = (word: string): WordTask => {
+  const randomNumbers = twoRandomLessThan(word.length)
+  const blankIndices = randomNumbers.sort((a: number, b: number) => a-b)
   const letters: Letter[] = [...word].map(c => ({c, status: 'Normal'}))
   blankIndices.forEach(i => {letters[i].status = 'Hidden'})
   const blanks = blankIndices.map(i => letters[i].c)
@@ -87,8 +89,8 @@ const randomLettersIncluding = (toInclude: string[]) => {
     result.push(randomLetterExcluding(result)) //no duplicates
   }
   
-  for (let i = 0; i < toInclude.length; i++) {
-    result[randomLessThan(letterCount)] = toInclude[i]
-  }
+  const [firstIndex, secondIndex] = twoRandomLessThan(letterCount)
+  result[firstIndex] = toInclude[0]
+  result[secondIndex] = toInclude[1]
   return result
 }
