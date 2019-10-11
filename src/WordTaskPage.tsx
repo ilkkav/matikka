@@ -53,16 +53,16 @@ export function WordTaskPage({ input: { letters, blanks, guessLetters }, setDone
 function LetterBox(c: Letter, i: number, saveInput: ((s: string) => void)) {
   return (
     c.status === 'Hidden' ?
-      <input key={i} className="flex-item-small silver" type="text" onChange={
+      <input key={i} className="flex-item small silver" type="text" onChange={
         (event) => {
           saveInput(event.target.value)
         }
       }
       /> :
       c.status === 'Normal' ?
-        (<div key={i} className="flex-item-small river">{c.c}</div>)
+        (<div key={i} className="flex-item small river">{c.c}</div>)
         :
-        <div key={i} className="flex-item-small emerald">{c.c}</div>
+        <div key={i} className="flex-item small emerald">{c.c}</div>
   )
 }
 
