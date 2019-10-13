@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/matikka/precache-manifest.4b1db15a35c3b7593b4b21f18e995409.js"
+  "/matikka/precache-manifest.47d7bff1b2d86eff9de512e9115ee58b.js"
 );
 
 self.addEventListener('message', (event) => {
