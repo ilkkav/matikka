@@ -19,6 +19,12 @@ function App() {
   const [doneCount, setDoneCount] = useState(0);
   const [wordGameSelected, setWordGameSelected] = useState<boolean>(true);
 
+  const changeGame = () => {
+    setWordGameSelected(!wordGameSelected)
+    setShowPrize(false);
+    nextTask();
+  }
+
   return (
     <div className="App">
       <div className="header flex-item alizarin">LYYTIN LASKUPELI</div>
@@ -32,17 +38,18 @@ function App() {
         wordGameSelected ? <WordTaskPage input={wordTasks[doneCount]} setDone={() => setShowPrize(true)} />
           : <TaskPage input={task()} setDone={() => setShowPrize(true)} />
       }
-      <div className="flex-container narrow clouds">
-        <button className="flex-item button small pomegranate hollow" value="valmis" onClick={() => {
-          setWordGameSelected(!wordGameSelected)
-          setShowPrize(false);
-          nextTask();
-        }} >
-          VAIHDA PELI
-        </button>
-      </div>
+      {ChangeGameButton(changeGame)}
     </div>
   );
+}
+
+function ChangeGameButton(handleClick: () => void): JSX.Element {
+  return (<div className="flex-container narrow clouds">
+    <button className="flex-item button small pomegranate hollow" value="valmis" onClick={() => {      
+    }} >
+      VAIHDA PELI
+  </button>
+  </div>)
 }
 
 export default App;
