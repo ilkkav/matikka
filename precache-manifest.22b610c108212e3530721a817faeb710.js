@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be2be806dd1edf6451792af53b0bda71",
+    "revision": "35193534d5183333a5ed0532f57d20b1",
     "url": "/matikka/index.html"
   },
   {
-    "revision": "210ba6d441fc1381964c",
-    "url": "/matikka/static/css/main.96425978.chunk.css"
+    "revision": "371893957d6629947b0e",
+    "url": "/matikka/static/css/main.491348d2.chunk.css"
   },
   {
-    "revision": "46bf0dc73153420f2773",
-    "url": "/matikka/static/js/2.2771e3ae.chunk.js"
+    "revision": "39d24394a995d122007d",
+    "url": "/matikka/static/js/2.5ebb4056.chunk.js"
   },
   {
-    "revision": "210ba6d441fc1381964c",
-    "url": "/matikka/static/js/main.984cde11.chunk.js"
+    "revision": "371893957d6629947b0e",
+    "url": "/matikka/static/js/main.6531a133.chunk.js"
   },
   {
     "revision": "0cfab1d036f3f3ae08ff",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cad1efa976481ba1b5026fd9f0452771",
     "url": "/matikka/static/media/butterfly.cad1efa9.jpg"
+  },
+  {
+    "revision": "c7e8586cafe46316da1112b503bda301",
+    "url": "/matikka/static/media/carriage.c7e8586c.png"
   },
   {
     "revision": "d188f359b3a2817e00a2d14b21a19a68",
@@ -34,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "40fd825f86f35d3034344b21c6a40aba",
     "url": "/matikka/static/media/penguin.40fd825f.jpg"
+  },
+  {
+    "revision": "b2c344bb0aff4b03d8d209928d843688",
+    "url": "/matikka/static/media/pirate.b2c344bb.png"
+  },
+  {
+    "revision": "9310a19abed59e837f40326db94d7295",
+    "url": "/matikka/static/media/pirate_ship.9310a19a.jpg"
   },
   {
     "revision": "eb8b08012ba88555552870518f19ba6a",
