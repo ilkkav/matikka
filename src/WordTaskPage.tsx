@@ -23,6 +23,8 @@ export function WordTaskPage({ input: { letters, blanks, guessLetters }, setDone
   const [lettersToGuess, setLettersToGuess] = useState<string[]>([...blanks])
   const [solvedLetters, setSolvedLetters] = useState<string[]>([])
 
+  console.log('solved:', solvedLetters)
+
   const saveCharInput = (c: string) => {
 
     if (!lettersToGuess.includes(c)) {
@@ -32,7 +34,12 @@ export function WordTaskPage({ input: { letters, blanks, guessLetters }, setDone
     setSolvedLetters([...solvedLetters, c])
     setLettersToGuess(removeFromArray(c, lettersToGuess))
     if (lettersToGuess.length === 0) {
-      setTimeout(() => setDone(true), 1000)
+      setTimeout(
+        () => {
+          setSolvedLetters([])
+          setDone(true);
+        },
+        1000)
     }
   }
 

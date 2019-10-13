@@ -1,5 +1,6 @@
 import butterfly from './butterfly.jpg'
 import pirateShip from './pirate_ship.jpg';
+import pirate from './pirate.png';
 import princesses from './princesses.jpg';
 import carriage from './carriage.png';
 import fireEngine from './fire_engine.jpg';
@@ -32,6 +33,9 @@ const wordsAndImages: Record<string, any> = {
   PERHONEN: butterfly,
   PRINSESSA: princesses,
   PALOAUTO: fireEngine,
+  KÄRRYT: carriage,
+  MERIROSVOLAIVA: pirateShip,
+  MERISROSVO: pirate,
   SATEENKAARI: rainbow,
   PINGVIINI: penguin,
   LINNA: castle,
