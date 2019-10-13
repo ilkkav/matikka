@@ -23,8 +23,6 @@ export function WordTaskPage({ input: { letters, blanks, guessLetters }, setDone
   const [lettersToGuess, setLettersToGuess] = useState<string[]>([...blanks])
   const [solvedLetters, setSolvedLetters] = useState<string[]>([])
 
-  console.log('solved:', solvedLetters)
-
   const saveCharInput = (c: string) => {
 
     if (!lettersToGuess.includes(c)) {

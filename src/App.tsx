@@ -6,9 +6,6 @@ import { task, getWordTasks, WordTask } from './task';
 import { TaskPage } from './TaskPage';
 import { WordTaskPage } from './WordTaskPage';
 
-const wordTasks: WordTask[] = getWordTasks()
-const maxIndex = wordTasks.length;
-
 function App() {
 
   const nextTask = () => {
@@ -24,6 +21,9 @@ function App() {
     setShowPrize(false);
     nextTask();
   }
+
+  const wordTasks: WordTask[] = getWordTasks()
+  const maxIndex = wordTasks.length;
 
   return (
     <div className="App">
