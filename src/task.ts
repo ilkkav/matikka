@@ -86,7 +86,7 @@ const randomLettersIncluding = (toInclude: string[]) => {
   const letterCount = 8
   const result: string[] = []
   for (let i = 0; i < letterCount; i++) {
-    result.push(randomLetterExcluding(result)) //no duplicates
+    result.push(randomLetterExcluding([...result, ...toInclude])) //no duplicates.
   }
   
   const [firstIndex, secondIndex] = twoRandomLessThan(letterCount)
