@@ -27,6 +27,14 @@ function App() {
 
   return (
     <div className="App">
+      <div className="dropdown">
+        <button className="dropbtn">Dropup</button>
+        <div className="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
       <div className="header flex-item alizarin">LYYTIN LASKUPELI</div>
       {showPrize ?
         <img className="flex-item color-2 responsive-image" src={wordTasks[doneCount].image} onClick={() => {
