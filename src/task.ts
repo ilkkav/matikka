@@ -1,15 +1,15 @@
-import butterfly from './butterfly.jpg'
-import pirateShip from './pirate_ship.jpg';
-import pirate from './pirate.png';
-import princesses from './princesses.jpg';
-import carriage from './carriage.png';
-import fireEngine from './fire_engine.jpg';
-import penguin from './penguin.jpg';
-import unicorn from './unicorn.jpg';
-import castle from './castle.jpg';
-import rainbow from './rainbow.jpg';
-import necklace from './necklace.jpg';
-import bracelet from './bracelet.jpg';
+import butterfly from './images/butterfly.jpg'
+import pirateShip from './images/pirate_ship.jpg';
+import pirate from './images/pirate.png';
+import princesses from './images/princesses.jpg';
+import carriage from './images/carriage.png';
+import fireEngine from './images/fire_engine.jpg';
+import penguin from './images/penguin.jpg';
+import unicorn from './images/unicorn.jpg';
+import castle from './images/castle.jpg';
+import rainbow from './images/rainbow.jpg';
+import necklace from './images/necklace.jpg';
+import bracelet from './images/bracelet.jpg';
 
 export type Task = {
   first: number

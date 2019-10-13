@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <div className="header flex-item alizarin">LYYTIN LASKUPELI</div>
       {showPrize ?
-        <img className="flex-item color-2 responsive-image" src={wordTasks[doneCount].image} onClick={() => {
+        <img className="flex-item color-2 responsive-image" alt="kuva" src={wordTasks[doneCount].image} onClick={() => {
           setShowPrize(false);
           nextTask();
         }
