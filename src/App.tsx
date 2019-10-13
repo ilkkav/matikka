@@ -45,8 +45,7 @@ function App() {
 
 function ChangeGameButton(handleClick: () => void): JSX.Element {
   return (<div className="flex-container narrow clouds">
-    <button className="flex-item button small pomegranate hollow" value="valmis" onClick={() => {      
-    }} >
+    <button className="flex-item button small pomegranate hollow" value="valmis" onClick={handleClick} >
       VAIHDA PELI
   </button>
   </div>)

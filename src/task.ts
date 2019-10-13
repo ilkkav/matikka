@@ -8,6 +8,8 @@ import penguin from './penguin.jpg';
 import unicorn from './unicorn.jpg';
 import castle from './castle.jpg';
 import rainbow from './rainbow.jpg';
+import necklace from './necklace.jpg';
+import bracelet from './bracelet.jpg';
 
 export type Task = {
   first: number
@@ -32,10 +34,12 @@ export type Letter = {
 const wordsAndImages: Record<string, any> = {
   PERHONEN: butterfly,
   PRINSESSA: princesses,
+  RANNEKORU: bracelet,
+  KAULAKORU: necklace,
   PALOAUTO: fireEngine,
   KÄRRYT: carriage,
   MERIROSVOLAIVA: pirateShip,
-  MERISROSVO: pirate,
+  MERIROSVO: pirate,
   SATEENKAARI: rainbow,
   PINGVIINI: penguin,
   LINNA: castle,
