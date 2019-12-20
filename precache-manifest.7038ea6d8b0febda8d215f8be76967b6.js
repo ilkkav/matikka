@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35193534d5183333a5ed0532f57d20b1",
+    "revision": "bd8bbf40bc3462cd5c1b9b096eda94d6",
     "url": "/matikka/index.html"
   },
   {
-    "revision": "371893957d6629947b0e",
-    "url": "/matikka/static/css/main.491348d2.chunk.css"
+    "revision": "7f3d4f75b77036d8aabf",
+    "url": "/matikka/static/css/main.2c0c28fa.chunk.css"
   },
   {
-    "revision": "39d24394a995d122007d",
-    "url": "/matikka/static/js/2.5ebb4056.chunk.js"
+    "revision": "96164798598f25bf10bc",
+    "url": "/matikka/static/js/2.912011e4.chunk.js"
   },
   {
-    "revision": "371893957d6629947b0e",
-    "url": "/matikka/static/js/main.6531a133.chunk.js"
+    "revision": "7f3d4f75b77036d8aabf",
+    "url": "/matikka/static/js/main.ce5390dd.chunk.js"
   },
   {
     "revision": "0cfab1d036f3f3ae08ff",
     "url": "/matikka/static/js/runtime~main.445039c4.js"
+  },
+  {
+    "revision": "df8529bb67b979678a8872e875670484",
+    "url": "/matikka/static/media/bracelet.df8529bb.jpg"
   },
   {
     "revision": "cad1efa976481ba1b5026fd9f0452771",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "850934aefb450f3207fec5153de590d4",
     "url": "/matikka/static/media/fire_engine.850934ae.jpg"
+  },
+  {
+    "revision": "d8e500a604f2c2762b3259a846ae5352",
+    "url": "/matikka/static/media/necklace.d8e500a6.jpg"
   },
   {
     "revision": "40fd825f86f35d3034344b21c6a40aba",
